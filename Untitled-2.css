@@ -1,3 +1,4 @@
+
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
 *{
     margin: 0;
@@ -5,17 +6,13 @@
     box-sizing: border-box;
     font-family: "Montserrat", sans-serif;
 }
-body {
-    display: flex;
-    flex-direction: column;
-    align-items: left;
-    background-color: #f0f0f0;
-    padding-left: 10px;
-    height: auto; /* Allow body to expand with content */
-  }
-  
 :root{
     --primary: #A020F0;
+}
+
+:root {
+    
+    --primary: #A020F0 ;
 }
 
 h3{
@@ -59,7 +56,6 @@ h3{
     display: none; 
 }
 
-
 /* Mobile styles */
 @media (max-width: 768px) {
     .nav-section
@@ -91,7 +87,6 @@ h3{
         cursor: pointer;
         margin-left: -20px;
     }
-
 
     .nav-section {
         display: flex;
@@ -140,7 +135,6 @@ h3{
     border-radius: 24px;
     color: #ffffff;
     border: none;
-
 
 }
 .why-us{
@@ -269,8 +263,132 @@ h3{
         grid-template-columns: repeat(1, 100%);
     }
 }
-/*members section*/
 
+
+/* form and contact section */
+body {
+    display: flex;
+    flex-direction: column;
+    align-items: left;
+    background-color: #f0f0f0;
+    padding-left: 10px;
+    height: auto; /* Allow body to expand with content */
+  }
+  
+.form-query, .topaz{
+    width: 50%;
+    background-color: #d3d3d3; /* Gray color */
+    padding: 20px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Shadow effect */
+    opacity: 0;
+    transform: translateY(-50px);
+    animation: slideIn 1s forwards;
+    margin-top: 70px;
+    margin-bottom: 100px;
+}
+.topaz i{
+    font-size: 30px;
+}
+.topaz p{
+    font-size: 25px;
+}
+.footer-section {
+  display: flex; /* Enable flexbox for centering */
+  flex-direction: column; /* Arrange items in a column */
+  align-items: center; /* Center items horizontally */
+  justify-content: center; /* Center items vertically */
+  padding: 10px;
+  margin-bottom: 50px;
+}
+
+.form-query:nth-child(1) {
+    animation-delay: 0s;
+}
+  
+.form-query:nth-child(2) {
+    animation-delay: 0.5s;
+}
+
+.footer-section {    
+  animation-delay: 1s;
+}
+
+.form-query input,
+.form-query textarea{
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+    border-radius: 5px;
+    border: none;
+  }
+
+.form-query textarea{
+    resize: vertical;
+}
+
+.form-query button{
+ 
+    float: right;
+    background-color: white;
+    color: #333; /* Darker gray text */
+    padding: 10px 20px;
+    border-radius: 5px;
+    border: none;
+    cursor: pointer;
+    margin-top: 110px;
+}
+
+.form-query button:hover{
+    background-color: #9356b9;
+    font-weight: bold;
+    transform: scale(1.2); /* Increase size on hover */
+}
+.footer-section a {
+  color: #333; /* Icon color */
+  margin: 0 10px;
+  text-decoration: none;
+  font-size: 24px; /* Icon size */
+  transition: transform 0.3s ease, color 0.3s ease; /* Smooth scaling and color transition */
+}
+
+.footer-section a i {
+  /* Target the <i> tag inside the <a> */
+  transition: transform 0.3s ease;
+}
+
+.footer-section a:hover i {
+  /* Scale the icon on hover */
+  color: #a020f0; /* Change color on hover */
+  transform: scale(1.2); /* Increase size on hover */
+}
+
+.footer-section p {
+  color: #333;
+  margin-top: 10px;
+  text-align: center; /* Center the text */
+}
+
+@keyframes slideIn {
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.required {
+  color: red;
+  margin-left: 5px;
+}
+
+.form-description {
+  margin-bottom: 20px;
+}
+
+/*members section*/
 
 #team {
     width: 100%;
@@ -360,7 +478,6 @@ h3{
     background-color: #000;
 }
 
-
 @media (max-width: 992px) {
     .member--card {
         flex: 1 1 calc(50% - 40px);
@@ -413,128 +530,5 @@ h3{
     .member--card p {
         font-size: 12px;
     }
-}
 
-
-/* form and contact section */
-body {
-    display: flex;
-    flex-direction: column;
-    align-items: left;
-    background-color: #f0f0f0;
-    padding-left: 10px;
-    height: auto; 
-  }
-  
-.form-query, .topaz{
-    width: 50%;
-    background-color: #d3d3d3; 
-    padding: 20px;
-    margin-left: auto;
-    margin-right: auto;
-    margin-bottom: 20px;
-    border-radius: 8px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); 
-    opacity: 0;
-    transform: translateY(-50px);
-    animation: slideIn 1s forwards;
-    margin-top: 70px;
-    margin-bottom: 100px;
-}
-.topaz i{
-    font-size: 24px;
-}
-.topaz p{
-    font-size: 24px;
-}
-.footer-section {
-  display: flex; 
-  flex-direction: column; 
-  align-items: center;
-  justify-content: center; 
-  padding: 10px;
-  margin-bottom: 50px;
-}
-
-.form-query:nth-child(1) {
-    animation-delay: 0s;
-}
-  
-.form-query:nth-child(2) {
-    animation-delay: 0.5s;
-}
-
-.footer-section {    
-  animation-delay: 1s;
-}
-
-.form-query input,
-.form-query textarea{
-    width: 100%;
-    padding: 10px;
-    margin: 10px 0;
-    border-radius: 5px;
-    border: none;
-  }
-
-.form-query textarea{
-    resize: vertical;
-}
-
-.form-query button{
- 
-    float: right;
-    background-color: white;
-    color: #333; 
-    padding: 10px 20px;
-    border-radius: 5px;
-    border: none;
-    cursor: pointer;
-    margin-top: 110px;
-}
-
-.form-query button:hover{
-    background-color: #9356b9;
-    font-weight: bold;
-    transform: scale(1.2); 
-}
-.footer-section a {
-  color: #333;
-  margin: 0 10px;
-  text-decoration: none;
-  font-size: 24px; 
-  transition: transform 0.3s ease, color 0.3s ease; 
-}
-
-.footer-section a i {
-  /* Target the <i> tag inside the <a> */
-  transition: transform 0.3s ease;
-}
-
-.footer-section a:hover i {
-  /* Scale the icon on hover */
-  color: #a020f0; /* Change color on hover */
-  transform: scale(1.2); /* Increase size on hover */
-}
-
-.footer-section p {
-  color: #333;
-  margin-top: 10px;
-  text-align: center; /* Center the text */
-}
-
-@keyframes slideIn {
-  to {
-    opacity: 1;
-    transform: translateY(0);
-  }
-}
-
-.required {
-  color: red;
-  margin-left: 5px;
-}
-
-.form-description {
-  margin-bottom: 20px;
 }
