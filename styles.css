@@ -17,29 +17,85 @@ h3{
 
 /* navigation bar */
 
-.nav-section{
+.nav-section {
     display: flex;
     justify-content: space-between;
     width: 90%;
     padding: 20px;
     margin: auto;
+    align-items: center;
 }
-.nav-section ul  {
+
+.nav-list {
     display: flex;
     gap: 20px;
     list-style: none;
     font-size: 16px;
     padding: 10px;
-
 }
-.nav-section button{
+
+.nav-list li {
+    margin: 0;
+}
+
+.nav-section button {
     background-color: var(--primary);
     padding: 10px;
     border-radius: 24px;
     color: #ffffff;
     border: none;
-    font-weight:bold;
+    font-weight: bold;
 }
+.menu-icon {
+    display: none; 
+}
+
+
+/* Mobile styles */
+@media (max-width: 768px) {
+    .nav-section
+    {
+        border-bottom: 1px solid #ccc;
+        width: 100%;
+        margin-bottom: 30px;
+    } 
+    .nav-list {
+        display: none;
+        flex-direction: column;
+        position: absolute;
+        top: 80px;
+        left: 107px;
+        background-color: #ffffff;
+        width: 200px;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        z-index: 1000;
+        margin-left: -70px;
+    }
+
+    .nav-list li {
+        padding: 10px;
+        border-bottom: 1px solid #ccc;
+    }
+
+    .menu-icon {
+        display: block;
+        cursor: pointer;
+        margin-left: -20px;
+    }
+
+
+    .nav-section {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .menu-icon span {
+        font-size: 30px;
+        color: var(--primary);
+        margin-left: -70px;
+    }
+}
+
 /* hero section */
 
 .hero-container {
