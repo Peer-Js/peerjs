@@ -296,20 +296,19 @@ h3{
 }
 
 .member--card {
-
-        flex: 1 1 calc(33.333% - 40px); 
-        max-width: calc(33.333% - 40px); 
-        background-color:transparent;
-        padding: 20px;
-        border-radius: 10px;
-        /*box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);*/
-        text-align: center;
+    flex: 1 1 calc(33.333% - 40px);
+    max-width: calc(33.333% - 40px);
+    background-color: transparent;
+    padding: 20px;
+    border-radius: 10px;
+    text-align: center;
+    transition: transform 0.3s ease;
 }
-.member--card:hover{
+
+.member--card:hover {
     cursor: pointer;
     background: #eeeffe;
     transform: scale(1.04);
-    transition: ease
 }
 
 .profile--image {
@@ -350,4 +349,59 @@ h3{
     width: 1px;
     height: 24px;
     background-color: #000;
+}
+
+
+@media (max-width: 992px) {
+    .member--card {
+        flex: 1 1 calc(50% - 40px);
+        max-width: calc(50% - 40px);
+    }
+
+    .member--heading h1 {
+        font-size: 36px;
+    }
+}
+
+@media (max-width: 768px) {
+    .member--card {
+        flex: 1 1 calc(100% - 40px);
+        max-width: calc(100% - 40px);
+    }
+
+    .member--heading h1 {
+        font-size: 32px;
+    }
+
+    .profile--image {
+        width: 120px;
+        height: 120px;
+    }
+
+    .member--card h4 {
+        font-size: 18px;
+    }
+
+    .member--card p {
+        font-size: 14px;
+    }
+}
+
+@media (max-width: 480px) {
+    .member--heading h1 {
+        font-size: 28px;
+    }
+
+    .profile--image {
+        width: 100px;
+        height: 100px;
+    }
+
+    .member--card h4 {
+        font-size: 16px;
+    }
+
+    .member--card p {
+        font-size: 12px;
+    }
 }
