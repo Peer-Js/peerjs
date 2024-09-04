@@ -41,17 +41,7 @@ h3{
     font-weight:bold;
 }
 /* hero section */
-@media (max-width: 750px){
-    .hero-container{
-        display: flex;
-    
-        flex-direction: column;
-        
-    }
-    h1{
-        font-size: 30px;
-    }
-}
+
 .hero-container {
     display: flex;
     align-items: center;
@@ -95,6 +85,27 @@ h3{
     border: 1px solid #ccc;
 
 }
+@media (max-width: 750px){
+    .hero-container{
+        display: flex;
+        padding: 0px;
+        flex-direction: column;
+        gap: 12px;
+        
+    }
+    .hero-text h1{
+        font-size: 30px;
+        font-weight: 800;
+    
+    }
+    .hero-container img{
+        object-fit: contain;
+        width: 350px;
+        height: 460px;
+    }
+}
+
+/* events */
 
 #events{
     width: 100%;
@@ -183,7 +194,10 @@ h3{
 @media (max-width: 750px) {
     .event-container{
         grid-template-columns: repeat(1, 60%);
+        margin: auto;
+        width: 90%;
     }
+    
 }
 @media (max-width: 550px) {
     .event-container{
