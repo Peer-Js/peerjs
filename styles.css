@@ -9,7 +9,7 @@ body {
     display: flex;
     flex-direction: column;
     align-items: left;
-    padding-left: 10px;
+    
     height: auto; /* Allow body to expand with content */
   }
   
@@ -124,10 +124,12 @@ h3{
     flex-direction: column; 
     align-items: left; 
     gap: 12px;
+    max-width: 70%;
 
 }
 .hero-text h1{
     font-size: 40px;
+    
     font-weight: 800;
 
 }
@@ -356,7 +358,8 @@ h3{
 #events{
     width: 100%;
     height: fit-content;
-    padding: 20px;
+    padding-top: 30px;
+    padding-bottom: 30px;
     
 }
 .event-title{
@@ -483,6 +486,8 @@ h3{
     justify-content: center;
     flex-wrap: wrap;
     gap: 30px;
+    margin: auto;
+    width: 80%;
 }
 
 .member--card {
@@ -504,6 +509,7 @@ h3{
 .profile--image {
     width: 150px;
     height: 150px;
+    object-fit: cover;
     border: 2px solid rgba(170, 169, 169, 0.5);
     border-radius: 50%;
     margin-bottom: 15px;
@@ -620,9 +626,11 @@ h3{
 }
 .topaz i{
     font-size: 24px;
+
 }
 .topaz p{
     font-size: 24px;
+    padding-top: 15px;
 }
 .footer-section {
   display: flex; 
@@ -651,7 +659,7 @@ h3{
     padding: 10px;
     margin: 10px 0;
     border-radius: 5px;
-    border: none;
+    border: 1px solid #ccc;
   }
 
 .form-query textarea{
@@ -683,6 +691,11 @@ h3{
   transition: transform 0.3s ease, color 0.3s ease; 
 }
 
+#footer {
+    border-top: 1px solid #ccc;
+    width: 80%;
+    margin: auto;
+}
 .footer-section a i {
   /* Target the <i> tag inside the <a> */
   transition: transform 0.3s ease;
@@ -714,4 +727,5 @@ h3{
 
 .form-description {
   margin-bottom: 20px;
+  margin-top: 20px;
 }
