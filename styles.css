@@ -9,8 +9,7 @@ body {
     display: flex;
     flex-direction: column;
     align-items: left;
-    background-color: #f0f0f0;
-    padding-left: 10px;
+    
     height: auto; /* Allow body to expand with content */
   }
   
@@ -58,7 +57,10 @@ h3{
 .menu-icon {
     display: none; 
 }
-
+.nav-list a{
+    text-decoration: none;
+    color: #000000;
+}
 
 /* Mobile styles */
 @media (max-width: 768px) {
@@ -122,10 +124,12 @@ h3{
     flex-direction: column; 
     align-items: left; 
     gap: 12px;
+    max-width: 70%;
 
 }
 .hero-text h1{
     font-size: 40px;
+    
     font-weight: 800;
 
 }
@@ -150,6 +154,7 @@ h3{
     border: 1px solid #ccc;
 
 }
+
 @media (max-width: 750px){
     .hero-container{
         display: flex;
@@ -174,8 +179,11 @@ h3{
 
 #why-us {
     width: 100%;
-    height: fit-content;
-    padding: 45px;
+    padding-top: 30px;
+    padding-bottom: 30px;
+
+    
+   
 }
 
 .section-header-container {
@@ -202,8 +210,8 @@ h3{
 }
 
 .sub-section-container {
-    max-width: 700px;
-    width: 100%;
+    
+    width: 75%;
     margin: 0 auto;
     position: relative;
     margin-bottom: 15px;
@@ -221,7 +229,6 @@ h3{
     bottom: -30px;
     height: 0.1px;
     background: rgba(67, 67, 67, 0.284);
-    box-shadow: 0px -4px 6px rgba(0, 0, 0, 0.189);
     z-index: -1;
 }
 
@@ -260,10 +267,20 @@ h3{
 }
 
 .what-we-do-container{
+    
+    width: 100%;
+    background-color: #E7F6FD;
+    padding-top: 40px;
+    padding-bottom: 40px;
+    margin-bottom: 30px;
+    
+}
+
+.what-we-do-content{
     display: flex;
-    flex-direction: column;
-    padding-left:10%;
-    margin-top: 50px;
+    justify-content: center;
+    margin: auto;
+    width: 80%;
     
 }
 
@@ -341,7 +358,8 @@ h3{
 #events{
     width: 100%;
     height: fit-content;
-    padding: 20px;
+    padding-top: 30px;
+    padding-bottom: 30px;
     
 }
 .event-title{
@@ -441,7 +459,7 @@ h3{
 #team {
     width: 100%;
     padding: 40px 20px;
-    background-color: #ffffff;
+    background-color: #E7F6FD;
     text-align: center;
 }
 
@@ -468,6 +486,8 @@ h3{
     justify-content: center;
     flex-wrap: wrap;
     gap: 30px;
+    margin: auto;
+    width: 80%;
 }
 
 .member--card {
@@ -489,6 +509,7 @@ h3{
 .profile--image {
     width: 150px;
     height: 150px;
+    object-fit: cover;
     border: 2px solid rgba(170, 169, 169, 0.5);
     border-radius: 50%;
     margin-bottom: 15px;
@@ -583,24 +604,20 @@ h3{
 
 
 /* form and contact section */
-body {
+
+#form{
     display: flex;
-    flex-direction: column;
-    align-items: left;
-    background-color: #f0f0f0;
-    padding-left: 10px;
-    height: auto; 
-  }
-  
+    flex-wrap: wrap;
+    margin: auto;
+    width: 80%;
+}
 .form-query, .topaz{
     width: 50%;
-    background-color: #d3d3d3; 
     padding: 20px;
     margin-left: auto;
     margin-right: auto;
     margin-bottom: 20px;
     border-radius: 8px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); 
     opacity: 0;
     transform: translateY(-50px);
     animation: slideIn 1s forwards;
@@ -609,9 +626,11 @@ body {
 }
 .topaz i{
     font-size: 24px;
+
 }
 .topaz p{
     font-size: 24px;
+    padding-top: 15px;
 }
 .footer-section {
   display: flex; 
@@ -640,7 +659,7 @@ body {
     padding: 10px;
     margin: 10px 0;
     border-radius: 5px;
-    border: none;
+    border: 1px solid #ccc;
   }
 
 .form-query textarea{
@@ -672,6 +691,11 @@ body {
   transition: transform 0.3s ease, color 0.3s ease; 
 }
 
+#footer {
+    border-top: 1px solid #ccc;
+    width: 80%;
+    margin: auto;
+}
 .footer-section a i {
   /* Target the <i> tag inside the <a> */
   transition: transform 0.3s ease;
@@ -703,4 +727,5 @@ body {
 
 .form-description {
   margin-bottom: 20px;
+  margin-top: 20px;
 }
