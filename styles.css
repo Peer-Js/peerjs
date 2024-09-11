@@ -286,7 +286,12 @@ h3{
     width: 80%;
     
 }
-
+@media  (max-width: 750px){
+    .what-we-do-content{
+        display: grid;
+    }
+    
+}
 
 .title-container p{
     font-size: 42px;
@@ -388,7 +393,9 @@ h3{
     font-weight: 800;
     margin-bottom: 10px;
 }
-
+.event-heading p{
+    text-align: center;
+}
 .event-container{
     padding: 20px;
     display: grid;
@@ -449,7 +456,9 @@ h3{
         margin: auto;
         width: 90%;
     }
-    
+    .sub-section-container{
+        width: 90%;
+    }
 }
 @media (max-width: 550px) {
     .event-container{
